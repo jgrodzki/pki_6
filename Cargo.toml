@@ -1,5 +1,5 @@
 [package]
-name = "pki_6"
+name = "pki_7"
 version = "0.1.0"
 authors = ["Jakub Grodzki 240675"]
 edition = "2021"
@@ -9,9 +9,11 @@ edition = "2021"
 [dependencies]
 axum = "0.7.5"
 dotenvy = "0.15.7"
+maud = { version = "0.26.0", features = ["axum"] }
 oauth2 = "4.4.2"
 reqwest = { version = "0.12.4", features = ["json"] }
 serde = { version = "1.0.200", features = ["derive"] }
 serde_json = "1.0.117"
+sqlx = { version = "0.7.4", features = ["postgres", "runtime-tokio", "tls-rustls", "time"] }
 tokio = { version = "1.37.0", features = ["rt-multi-thread"] }
 tower-sessions = "0.12.2"
